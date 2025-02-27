@@ -77,4 +77,4 @@ RUN curl -fLO https://download.visualstudio.microsoft.com/download/pr/d26516b7-7
     && curl -fL https://aka.ms/dotnet-dump/linux-x64 -o dotnet-dump \
     && curl -fL https://aka.ms/dotnet-gcdump/linux-x64 -o dotnet-gcdump
 
-RUN npm install -g npm@8.19.2
+RUN npm install -g npm@10.9.2
