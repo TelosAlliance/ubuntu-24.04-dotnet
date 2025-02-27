@@ -73,4 +73,8 @@ RUN powershell_version=7.4.7 \
     # To reduce image size, remove the copy nupkg that nuget keeps.
     && find /usr/share/powershell -print | grep -i '.*[.]nupkg$' | xargs rm
 
+RUN curl -fLO https://download.visualstudio.microsoft.com/download/pr/d26516b7-7049-4c18-974c-467190461f3a/667fb6101ef1f43f624e175b49f8ab49/dotnet-runtime-8.0.13-linux-x64.tar.gz \
+    && curl -fL https://aka.ms/dotnet-dump/linux-x64 -o dotnet-dump \
+    && curl -fL https://aka.ms/dotnet-gcdump/linux-x64 -o dotnet-gcdump
+
 RUN npm install -g npm@8.19.2
