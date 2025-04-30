@@ -1,4 +1,4 @@
-FROM telosalliance/ubuntu-24.04:2025-01-09
+FROM telosalliance/ubuntu-24.04:2025-04-25
 
 ENV \
     # Unset ASPNETCORE_URLS from aspnet base image
