@@ -81,7 +81,7 @@ RUN powershell_version=7.6.0-preview.4 \
     # To reduce image size, remove the copy nupkg that nuget keeps.
     && find /usr/share/powershell -print | grep -i '.*[.]nupkg$' | xargs rm
 
-RUN curl -fLO https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.13/dotnet-runtime-10.0.2-linux-x64.tar.gz \
+RUN curl -fLO https://builds.dotnet.microsoft.com/dotnet/Runtime/10.0.13/dotnet-runtime-10.0.13-linux-x64.tar.gz \
     && curl -fL https://aka.ms/dotnet-dump/linux-x64 -o dotnet-dump \
     && curl -fL https://aka.ms/dotnet-gcdump/linux-x64 -o dotnet-gcdump
 
